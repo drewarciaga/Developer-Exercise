@@ -1,0 +1,21 @@
+-Setting up the database-
+1. On phpMyAdmin, create a new database named 'homefinder'
+2. Import 'houses.sql' file
+3. Click 'Go'
+
+-Starting up the server
+1. Download Developer Exercise zip
+2. Extract folder
+3. run cmd on developerExercise folder  (app\developerExercise)
+4. run the server,type on cmd: php artisan serve
+5. view the site on http://localhost:8000/
+
+
+**NOTE: I tried removing vendor directory as instructed. By doing so, I have encountered this error upon viewing the page;
+Fatal error: require(): Failed opening required ... /../vendor/autoload.php
+please type the ff line in cmd: composer install
+then you may start the server and view the page.
+
+If the program does not start, I can send you the project with vendor folder if needed/requested.
+
+Thank you!
