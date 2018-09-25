@@ -1,7 +1,13 @@
--Setting up the database-
+-Setting up the database using database backup file-
 1. On phpMyAdmin, create a new database named 'homefinder'
 2. Import 'houses.sql' file
 3. Click 'Go'
+
+-Setting up the database using migration and seed-
+1. run cmd on developerExercise folder (app\developerExercise)
+2. type: php artisan migrate
+3. type:  php artisan db:seed --class=HouseTableSeeder
+
 
 -Starting up the server
 1. Download Developer Exercise zip
