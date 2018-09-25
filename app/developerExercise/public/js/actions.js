@@ -49,3 +49,18 @@ function inputLimiter(e,allow) {
         return true;
     }
 }
+
+function isDecimal(evt){
+
+	var value = $('.txtDecimals').val();
+
+	var charCode = (evt.which) ? evt.which : evt.keyCode
+	if(charCode == 46 && value.indexOf(".") != -1)
+		return false;
+
+	if(charCode != 46 && charCode > 31 && (charCode < 48 || charCode > 57)){
+		return false;
+	}
+	return true;
+
+}
